@@ -1,0 +1,58 @@
+/* Estilizações gerais */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+h1 {
+  font-weight: 700;
+}
+
+p,
+a {
+  font-family: "Montserrat", sans-serif;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+/* ID's */
+#idPrincipal{
+    width: 100%;
+}
+
+#idSobreMim{
+    background-color: #2a8fad;
+    height: 100vh;
+    clip-path: polygon(0% 0, 500% 0%, 0% 100%, 0 4%);
+}
+
+/* Classes */
+.container{
+    
+}
+
+.corNome{
+    /* color: #2ea1c4; */
+    color: #2a8fad;
+}
+
+.botaoSobreMim{
+    /* border: solid #2ea1c4 1px; */
+    border: solid #2a8fad 1px;
+    padding: 10px;
+    /* color: #2ea1c4; */
+    color: #2a8fad;
+    font-weight: bolder;
+}
+
+.apresentacao{
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
