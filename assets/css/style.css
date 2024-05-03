@@ -32,6 +32,22 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
+input{
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid yellow;
+}
+
+textarea{
+  outline: none;
+}
+
+textarea:focus{
+  border: 2px solid yellow;
+}
+
 /* ID's */
 #idPrincipal{
     width: 100%;
@@ -49,6 +65,96 @@ a:hover {
     background-color: #2a8fad;
     height: 100vh;
     padding-top: 1%;
+}
+
+#idProjetos{
+  height: 100vh;
+  padding-top: 1%;
+}
+
+#idContato {
+  background-color: #2a8fad;
+  height: 80vh;
+  padding-top: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #idContato > * {
+  display: inline-block;
+  vertical-align: middle;
+} */
+
+.iconEmail,
+#textoContatos {
+  display: flex;
+  flex-direction: column; 
+}
+
+#containerContato > * {
+  margin-bottom: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#textoContatos > a {
+  display: flex;
+  align-items: center;
+}
+
+#formulario input {
+  margin-bottom: 10px; /* Espaçamento entre os inputs */
+}
+
+#formulario .mensagem {
+  margin-bottom: 10px; /* Espaçamento entre o textarea e o botão */
+}
+
+#formulario .btn {
+  margin-bottom: 0; /* Remove o espaçamento entre o botão e o próximo elemento */
+}
+
+#textoContatos svg {
+  margin-right: 10px;
+}
+
+#textoContatos p{
+  margin: 0px;
+}
+
+#textoContatos{
+  margin-top: -1%;
+  width: 100%;
+  /* padding-right: 10%; */
+}
+
+#containerContato{
+  margin-left: 25%;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#containerContato > .iconEmail-h2-container {
+  display: flex;
+  align-items: center;
+}
+
+#containerContato > .iconEmail-h2-container > svg,
+#containerContato > .iconEmail-h2-container > h2 {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 0px;
+  padding-right: 5px;
+  margin: 0px;
+}
+
+#containerContato > * {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 #menuSuperior{
@@ -95,9 +201,47 @@ a:hover {
   display: flex;
 }
 
+#rodape{
+  background-color: #1C5F73;
+  height: 20vh;
+  padding-top: 1%;
+  text-align: center;
+}
+
+
+#rodapeTexto{
+  font-family: "Montserrat", sans-serif;
+  color:#2d8fadce;
+}
+
 /* Classes */
 .container{
     
+}
+
+.iconEmail{
+  /* padding-left: 2%; */
+  margin: 0;
+}
+
+.form{
+  padding: 15px;
+  width: 90%;
+  border-radius: 5px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  /* color: white; */
+  background-color:#47bbdf;
+}
+
+.btn{
+  border: solid white 3px;
+  border-radius: 50px;
+  width: 150px;
+  height: 60px;
+  background-color: #1C5F73;
+  color: white;
+  cursor: pointer;
 }
 
 /* .figuras{
@@ -129,32 +273,44 @@ a:hover {
   margin-left: 13%;
   border-radius: 10px;
   height: 400px;
-  width: 40%; /* Definindo a largura da .figuras */
+  width: 40%;
   background-color: #1C5F73;
   display: flex;
-  flex-direction: row; /* Colocando os elementos em uma única linha */
+  flex-direction: row;
+}
+
+.iconeR{
+  margin-top: 3%;
+}
+
+.espaco{
+  margin-right: 35px;
+}
+
+.copyR{
+  margin-top: 1%;
 }
 
 .coluna {
-  width: 50%; /* Definindo a largura de cada coluna */
+  width: 50%;
   display: flex;
-  flex-direction: column; /* Colocando os elementos em uma única coluna */
+  flex-direction: column;
 }
 
 .tec {
-  width: calc(100% - 20px); /* Ajustando a largura dos elementos para ocupar toda a largura da coluna */
-  height: calc(33.33% - 20px); /* 33.33% de altura para cada quadrado, subtraindo a margem */
-  margin: 10px; /* Espaçamento entre os quadrados */
-  background-color: #237690; /* Cor de fundo do quadrado */
-  border-radius: 5px; /* Bordas arredondadas */
+  width: calc(100% - 20px); 
+  height: calc(33.33% - 20px);
+  margin: 10px;
+  background-color: #237690;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center; 
 }
 
 .ocupar-restante {
-  width: calc(50% - 20px); /* 66.66% de largura para o sétimo quadrado, subtraindo a margem */
-  height: calc(100% - 20px); /* 100% de altura para o sétimo quadrado, subtraindo a margem */
+  width: calc(50% - 20px);
+  height: calc(100% - 20px);
 }
 
 .texto{
@@ -212,7 +368,12 @@ a:hover {
 }
 
 .corHabilidade{
-  color: rgb(114, 236, 114);
+  /* color: rgb(114, 236, 114); */
+  color: yellow;
+}
+
+.linksCabecalho{
+  color: black;
 }
 
 .botaoSobreMim{
@@ -233,7 +394,6 @@ a:hover {
 
 .branco{
   color: white;
-
 }
 
 .apresentacao{
@@ -254,8 +414,29 @@ a:hover {
   max-width: 50%;
 }
 
+.sobreC{
+  margin-top: 3%;
+  margin-left: 2%;
+  max-width: 50%;
+  margin-bottom: 0px;
+}
+
 .projetos{
   margin: 0px 20px;
+}
+
+.mensagem{
+  max-width: 90% !important;
+  min-height: 20%;
+  max-height: 40%;
+  padding: 15px;
+  width: 90%;
+  border-radius: 5px;
+  height: 20%;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  /* color: white; */
+  background-color:#47bbdf;
 }
 
 .contato{
