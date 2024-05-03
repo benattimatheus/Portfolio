@@ -1,9 +1,19 @@
 /* Estilizações gerais */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
+/* img{
+  background-color: #ddd;
+  border-radius: 50%;
+  height: 300px;
+  object-fit: cover;
+  width: 300px;  
+} */
+
+
 h1 {
   font-weight: 700;
 }
+
 
 p,
 a {
@@ -27,10 +37,62 @@ a:hover {
     width: 100%;
 }
 
+#imgPerfil{
+  background-color: #ddd;
+  border-radius: 50%;
+  height: 300px;
+  object-fit: cover;
+  width: 300px;  
+}
+
 #idSobreMim{
     background-color: #2a8fad;
     height: 100vh;
-    clip-path: polygon(0% 0, 500% 0%, 0% 100%, 0 4%);
+    padding-top: 1%;
+}
+
+#menuSuperior{
+  border-bottom: solid rgba(211, 211, 211, 0.548) 1px;
+  padding: 20px;
+  display: flex;
+}
+
+#links{
+  margin-left: 75%;
+  display: flex;
+}
+
+#textoApresentacao{
+  padding-right: 5%;
+  /* max-width: 32%; */
+}
+
+#foto{
+  padding-left: 5%;
+}
+
+#textoFoto {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin: 0 auto; 
+  max-width: 55%; 
+  height: 100%;
+}
+
+#containerSobre{
+  display: flex;
+  align-items: center;
+}
+
+#habilidades{
+  margin-left: 15%;
+  /* margin-top: -4%; */
+  max-width: 45%;
+}
+
+#imagensH{
+  display: flex;
 }
 
 /* Classes */
@@ -38,9 +100,119 @@ a:hover {
     
 }
 
+/* .figuras{
+  margin-top: 2%;
+  margin-left: 13%;
+  border-radius: 10px;
+  height: 400px;
+  width: 40%;
+  background-color: #1C5F73;
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.tec{
+  width: calc(33.33% - 20px); 
+    height: calc(33.33% - 20px); 
+    margin: 10px;
+    background-color: #237690; 
+    border-radius: 5px; 
+}
+
+.restante{
+  width: calc(66.66% - 20px); 
+  height: calc(66.66% - 20px); 
+} */
+
+.figuras {
+  margin-top: 2%;
+  margin-left: 13%;
+  border-radius: 10px;
+  height: 400px;
+  width: 40%; /* Definindo a largura da .figuras */
+  background-color: #1C5F73;
+  display: flex;
+  flex-direction: row; /* Colocando os elementos em uma única linha */
+}
+
+.coluna {
+  width: 50%; /* Definindo a largura de cada coluna */
+  display: flex;
+  flex-direction: column; /* Colocando os elementos em uma única coluna */
+}
+
+.tec {
+  width: calc(100% - 20px); /* Ajustando a largura dos elementos para ocupar toda a largura da coluna */
+  height: calc(33.33% - 20px); /* 33.33% de altura para cada quadrado, subtraindo a margem */
+  margin: 10px; /* Espaçamento entre os quadrados */
+  background-color: #237690; /* Cor de fundo do quadrado */
+  border-radius: 5px; /* Bordas arredondadas */
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.ocupar-restante {
+  width: calc(50% - 20px); /* 66.66% de largura para o sétimo quadrado, subtraindo a margem */
+  height: calc(100% - 20px); /* 100% de altura para o sétimo quadrado, subtraindo a margem */
+}
+
+.texto{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  line-height: 1.5em;
+  max-width: fit-content;
+}
+
+/* .imagens{
+  background-color: #ddd;
+  border-radius: 50%;
+  height: 300px;
+  object-fit: cover;
+  width: 300px;  
+} */
+
+/* .nomeLogo{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: large;
+  margin-left: 2%
+} */
+
+.computador{
+  margin-top: -10%;
+  margin-left: 2%;
+}
+
+.cabecalho{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  /* font-size: large; */
+  margin-left: 2%
+}
+
+.cabecalhoH{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.lista{
+  font-family: "Montserrat", sans-serif;
+  line-height: 2em;
+}
+
 .corNome{
     /* color: #2ea1c4; */
     color: #2a8fad;
+}
+
+.botaoSM{
+  margin-top: 25px;
+}
+
+.corHabilidade{
+  color: rgb(114, 236, 114);
 }
 
 .botaoSobreMim{
@@ -52,7 +224,40 @@ a:hover {
     font-weight: bolder;
 }
 
+.icones{
+  display: flex;
+  align-items: center;
+  margin: 0 auto; 
+  max-width: 55%; 
+}
+
+.branco{
+  color: white;
+
+}
+
 .apresentacao{
-    height: 100vh;
+    height: 93vh;
     font-family: "Montserrat", sans-serif;
+    /* display:inline-flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+.github{
+  margin-right: 15px;
+}
+
+.sobre{
+  margin-top: 3%;
+  margin-left: 2%;
+  max-width: 50%;
+}
+
+.projetos{
+  margin: 0px 20px;
+}
+
+.contato{
+
 }
