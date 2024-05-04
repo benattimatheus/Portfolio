@@ -4,9 +4,9 @@
 /* img{
   background-color: #ddd;
   border-radius: 50%;
-  height: 300px;
+  height: 20vh;  <- alterado para 20% da altura da janela de visualização
   object-fit: cover;
-  width: 300px;  
+  width: 20vh;  <- alterado para 20% da altura da janela de visualização
 } */
 
 html {
@@ -91,27 +91,27 @@ textarea:focus{
 }
 
 #imgPerfil{
-  background-color: black;
+  background-color: #ddd;
   border-radius: 50%;
-  height: 300px;
+  height: 20vh;  /* alterado para 20% da altura da janela de visualização */
   object-fit: cover;
-  width: 300px;  
+  width: 20vh;  /* alterado para 20% da altura da janela de visualização */
 }
 
 #idSobreMim{
     background-color: #2a8fad;
-    height: 100vh;
+    height: 100vh;  /* alterado para 100% da altura da janela de visualização */
     padding-top: 1%;
 }
 
 #idProjetos{
-  height: 100vh;
+  height: 100vh;  /* alterado para 100% da altura da janela de visualização */
   padding-top: 1%;
 }
 
 #idContato {
   background-color: #2a8fad;
-  height: 80vh;
+  height: 80vh;  /* alterado para 80% da altura da janela de visualização */
   padding-top: 1%;
   display: flex;
   justify-content: center;
@@ -225,9 +225,9 @@ textarea:focus{
   /* max-width: 32%; */
 }
 
-#foto{
+/* #foto{
   padding-left: 5%;
-}
+} */
 
 #textoFoto {
   display: flex;
@@ -255,7 +255,7 @@ textarea:focus{
 
 #rodape{
   background-color: #1C5F73;
-  height: 20vh;
+  height: 20vh;  /* alterado para 20% da altura da janela de visualização */
   padding-top: 1%;
   text-align: center;
 }
@@ -540,7 +540,7 @@ textarea:focus{
 }
 
 .apresentacao{
-    height: 93vh;
+    height: 93vh;  /* alterado para 93% da altura da janela de visualização */
     font-family: "Montserrat", sans-serif;
     /* display:inline-flex; */
     align-items: center;
@@ -596,7 +596,7 @@ textarea:focus{
 }
 
 .listaProjetos .texto {
-  max-width: 600px; /* Defina o mesmo valor de largura do gif */
+  max-width: 600px; 
   overflow: hidden;
 }
 
@@ -616,7 +616,7 @@ textarea:focus{
 }
 
 .pinguim {
-  position: relative; /* Defina a posição como relativa */
+  position: relative;
   display: flex;
   justify-content: flex-end;
   margin-right: 15%;
