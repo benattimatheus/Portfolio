@@ -91,7 +91,7 @@ textarea:focus{
 }
 
 #imgPerfil{
-  background-color: #ddd;
+  background-color: transparent;
   border-radius: 50%;
   height: 300px;
   object-fit: cover;
