@@ -9,11 +9,48 @@
   width: 300px;  
 } */
 
+html {
+  scroll-behavior: smooth;
+}
 
 h1 {
   font-weight: 700;
 }
 
+/* ul {
+  list-style-type: none; 
+  padding: 0;
+} */
+
+textarea {
+  outline: none;
+  resize: none;
+  overflow-y: auto; 
+}
+
+
+.semFormatacao{
+  list-style-type: none; 
+  padding: 0;
+}
+
+.liFormatado{
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+  margin-right: 10px;
+  background-color:#2a8fad;
+  color: white;
+}
+
+/* li{
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+  margin-right: 10px;
+  background-color:#2a8fad;
+  color: white;
+} */
 
 p,
 a {
@@ -157,6 +194,21 @@ textarea:focus{
   vertical-align: middle;
 }
 
+#agradecimento{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  color: #2a8fad;
+  font-size: xx-large;
+}
+
+#pag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
 #menuSuperior{
   border-bottom: solid rgba(211, 211, 211, 0.548) 1px;
   padding: 20px;
@@ -219,6 +271,10 @@ textarea:focus{
     
 }
 
+.destaque{
+  font-weight: bold;
+}
+
 .iconEmail{
   /* padding-left: 2%; */
   margin: 0;
@@ -242,7 +298,13 @@ textarea:focus{
   background-color: #1C5F73;
   color: white;
   cursor: pointer;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
+
+.btn:hover{
+  background-color: #47bbdf;
+}
+
 
 /* .figuras{
   margin-top: 2%;
@@ -306,6 +368,12 @@ textarea:focus{
   display: flex;
   align-items: center;
   justify-content: center; 
+  transition: 0.3s ease;
+}
+
+.tec:hover{
+  box-shadow: 0 4px 10px #47bbdf;
+  transform: scale(1.03);
 }
 
 .ocupar-restante {
@@ -376,13 +444,83 @@ textarea:focus{
   color: black;
 }
 
-.botaoSobreMim{
-    /* border: solid #2ea1c4 1px; */
-    border: solid #2a8fad 1px;
-    padding: 10px;
-    /* color: #2ea1c4; */
-    color: #2a8fad;
-    font-weight: bolder;
+.botaoSobreMim {
+  border: solid #2a8fad 1px;
+  padding: 10px;
+  color: #2a8fad;
+  font-weight: bolder;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.botaoSobreMim:hover {
+  background-color: #2a8fad;
+  color: white;
+}
+
+/* CSS */
+.button-57 {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #2a8fad;
+  color: #2a8fad;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  line-height: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-57 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.button-57 span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.button-57:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2a8fad;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.button-57:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-57:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
 
 .icones{
@@ -390,6 +528,11 @@ textarea:focus{
   align-items: center;
   margin: 0 auto; 
   max-width: 55%; 
+}
+
+.mais{
+  margin-top: 3%;
+  margin-left: 4%;
 }
 
 .branco{
@@ -425,20 +568,57 @@ textarea:focus{
   margin: 0px 20px;
 }
 
+.listaProjetos{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 3%;
+}
+
 .mensagem{
-  max-width: 90% !important;
   min-height: 20%;
   max-height: 40%;
   padding: 15px;
   width: 90%;
   border-radius: 5px;
-  height: 20%;
+  height: 100%;
   border: none;
   font-family: "Montserrat", sans-serif;
-  /* color: white; */
   background-color:#47bbdf;
 }
 
-.contato{
+.gif{
+  max-width: 350px;
+}
 
+.listaProjetos .texto {
+  overflow: hidden;
+}
+
+.listaProjetos .texto {
+  max-width: 600px; /* Defina o mesmo valor de largura do gif */
+  overflow: hidden;
+}
+
+.btnMaisProjetos{
+  width: 180px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #2a8fad;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  color: white;
+}
+
+.btnMaisProjetos:hover{
+  background-color: #1C5F73;
+}
+
+.pinguim {
+  position: relative; /* Defina a posição como relativa */
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15%;
+  margin-top: -6%;
 }

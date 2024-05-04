@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
-    <link rel="shortcut icon" href="assets/css/imagens/.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/css/imagens/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Matheus Benatti</title>
 </head>
@@ -15,7 +15,6 @@
 <body>
     <div id="idPrincipal">
         <div id="menuSuperior">
-            <!-- Logo -->
             <span class="nomeLogo, cabecalho">Benatti</span>
             <div id="links">
                 <a href="#idSobreMim" class="sobreMim linksCabecalho">Sobre Mim</a>
@@ -52,7 +51,8 @@
                             </path>
                         </svg></a>
                     <p class="botaoSM">
-                        <a href="#idSobreMim" class="botaoSobreMim">Sobre mim</a>
+                        <a href="#idSobreMim"><button class="button-57" role="button"><span class="text">Sobre
+                                    Mim</span><span>Sobre Mim</span></button></a>
                     </p>
                 </div>
                 <div id="foto">
@@ -95,7 +95,6 @@
                 <div class="figuras">
                     <div class="coluna">
                         <div class="tec">
-
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
                                 height="100" width="100" />
                         </div>
@@ -130,6 +129,70 @@
         </div>
         <div id="idProjetos">
             <h2 class="cabecalho">CONHEÇA ALGUNS DOS MEUS PROJETOS</h2>
+            <div class="listaProjetos">
+                <div class="video">
+                    <h4 class="cabecalho">Sistema de cadastro de pacientes</h4>
+                    <video controls src="assets/css/imagens/pacientes.mp4" width="600"></video>
+                    <ul class="semFormatacao">
+                        <li class="liFormatado">
+                            Python
+                        </li>
+                        <li class="liFormatado">
+                            SQLite
+                        </li>
+                        <li class="liFormatado">
+                            Tkinter
+                        </li>
+                    </ul>
+                    <p class="texto">Sistema de cadastro de pacientes feito com Python, permitindo cadastro, alteração e
+                        remoção de pacientes da tabela.</p>
+                    <a href="https://github.com/benattimatheus/CRUD" class="linksCabecalho destaque" target="_blank">Ver
+                        projeto</a>
+                </div>
+                <div class="video">
+                    <h4 class="cabecalho">Clone Steam</h4>
+                    <video controls src="assets/css/imagens/steam.mp4" width="600"></video>
+                    <ul class="semFormatacao">
+                        <li class="liFormatado">
+                            HTML
+                        </li>
+                        <li class="liFormatado">
+                            CSS
+                        </li>
+                        <li class="liFormatado">
+                            JavaScript
+                        </li>
+                    </ul>
+                    <p class="texto">Projeto de clone da Steam, validando a senha com regras de negócio.</p>
+                    <a href="https://github.com/benattimatheus/CloneSteam" class="linksCabecalho destaque"
+                        target="_blank">Ver projeto</a>
+                </div>
+                <div class="gif">
+                    <h4 class="cabecalho">Jogo da Cobrinha</h4>
+                    <img src="assets/css/imagens/cobra.gif" width="350">
+                    <ul class="semFormatacao">
+                        <li class="liFormatado">
+                            Python
+                        </li>
+                    </ul>
+                    <p class="texto">Jogo famoso, feito em Python, explorando bibliotecas da linguagem. Feito seguindo
+                        curso da Dr. Angela Yu</p>
+                    <a href="https://github.com/benattimatheus/SnakeGame" class="linksCabecalho destaque"
+                        target="_blank">Ver projeto</a>
+                </div>
+            </div>
+            <div class="mais">
+                <a href="https://github.com/benattimatheus?tab=repositories" aria-label="Ir para GitHub"
+                    title="Ir para GitHub" target="_blank">
+                    <button type="button" class="btnMaisProjetos">Ver mais projetos <svg stroke="currentColor"
+                            fill="white" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z">
+                            </path>
+                        </svg></button>
+                </a>
+            </div>
         </div>
         <div id="idContato">
             <div id="containerContato">
@@ -143,17 +206,22 @@
                     </svg>
                     <h2 class="cabecalho branco">Entre em contato</h2>
                 </div>
-                <!-- <form id="formulario"> -->
+                <form id="formulario" action="https://formsubmit.co/matheus.cwb2@gmail.com" method="POST">
                     <input type="text" placeholder="Nome" required class="form">
                     <input type="email" placeholder="Email" required class="form">
-                    <textarea required class="mensagem" placeholder="Mensagem" maxlength="250"></textarea>
+                    <textarea required class="mensagem" placeholder="Mensagem" maxlength="1000"></textarea>
                     <button type="submit" class="btn">Enviar Mensagem</button>
-                <!-- </form> -->
+
+                    <input type="hidden" name="_subject" value="Novo Contato!">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="true">
+                    <input type="hidden" name="_next" value="https://gi/thanks.html">
+                </form>
             </div>
             <div id="textoContatos">
                 <p class="texto branco sobre">Vamos conectar! Sinta-se à vontade para entrar em contato comigo para
                     discutir projetos interessantes na área de desenvolvimento de software.</p>
-                <a href="" class="texto branco sobre">
+                <a href="mailto:matheus.cwb2@gmail.com" class="texto branco sobre">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24"
                         class="iconEmail" stroke-width="2" stroke="white" aria-hidden="true"
                         class="hidden h-16 w-16 text-white md:block">
@@ -202,8 +270,12 @@
             <div class="copyR">
                 <span id="rodapeTexto">© Copyright 2024 Matheus Benatti</span>
             </div>
+            <div class="pinguim">
+                <img id="pinguimImg" src="assets/css/imagens/pinguim.png" alt="pinguim" height="120" width="120">
+            </div>            
         </div>
     </div>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
